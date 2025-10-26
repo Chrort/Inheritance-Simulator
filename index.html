@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stammbaum</title>
+</head>
+
+<body>
+    <header>
+        <pre>Inheritance Simulator</pre>
+    </header>
+    <main>
+        <div id="input">
+            <input type="number" min="2" name="count" id="count" placeholder="Number of persons">
+            <input type="number" min="1" name="Generationen" id="gen" placeholder="Number of generations">
+            <input type="number" min="0" max="100" name="affected" id="affected" placeholder="Affected persons (%)">
+            <input type="number" min="1" max="10" name="fertility" id="fertility" placeholder="Fertility rate">
+            <label for="rez">Recessive</label>
+            <input type="radio" name="typ" id="rec">
+            <label for="dom">Dominant</label>
+            <input type="radio" name="typ" id="dom">
+        </div>
+
+        <button id="btn">Start Simulation</button>
+
+        <p id="invalid"></p>
+
+        <table id="results">
+            <tr id="tableHeader">
+                <th>Generation</th>
+                <th>Population</th>
+                <th>Affected</th>
+                <th>%</th>
+            </tr>
+        </table>
+
+    </main>
+</body>
+<script src="main.js"></script>
+
+</html>
